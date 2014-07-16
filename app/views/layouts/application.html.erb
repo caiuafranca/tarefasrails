@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gestão de Tarefas</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h1>Sistema de Gestão de Tarefas</h1>
+	<ul>
+		<li><%= link_to 'Home', root_path %></li>
+		<li><%= link_to 'Cadastro de Tarefas', new_task_path %></li>
+	</ul>
+<%= yield %>
+
+</body>
+</html>
